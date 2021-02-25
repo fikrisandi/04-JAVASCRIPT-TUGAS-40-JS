@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="M.Fikri Sandi Pratama">
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="180">
+    <link rel="shortcut icon" href="niomic.ico" />
+    <title>Tugas 40 JS</title>
+</head>
+
+<body>
+    <button type="button" onclick="" name="button">Jalankan</button>
+    <br />
+    <br />
+    <hr />
+    <b>Base URI</b> Property : <br />
+    <p id="contoh1">contoh</p>
+    <hr />
+    <b>Body</b> Property : <br />
+    <p id="contoh2">contoh</p>
+    <hr />
+    <b>Create</b> Element : <br /><br />
+    <script type="text/javascript">
+        var a = document.getElementsByTagName('button')[0];
+        a.addEventListener('click', function() {
+            var jawab1 = document.baseURI;
+            document.getElementById("contoh1").innerHTML = jawab1;
+            document.body.style.backgroundColor = 'green';
+            document.getElementById("contoh2").innerHTML = "color : green"
+            var jawab2 = document.createElement('input');
+            document.body.appendChild(jawab2);
+        })
+    </script>
+</body>
+
+</html>
